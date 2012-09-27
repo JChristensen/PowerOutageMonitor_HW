@@ -44,7 +44,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -190,7 +190,7 @@
 <text x="74.93" y="71.12" size="1.6764" layer="21" ratio="12" rot="R180">OUTAGE</text>
 <text x="93.98" y="34.29" size="1.9304" layer="21" ratio="10" rot="R90">Power Outage Logger</text>
 <text x="96.52" y="34.29" size="1.4224" layer="21" ratio="10" rot="R90">CC BY-SA jc 0912 v1.1</text>
-<text x="3.048" y="58.166" size="1.9304" layer="21" ratio="10" rot="SR270">open source</text>
+<text x="3.048" y="56.896" size="1.9304" layer="21" ratio="10" rot="SR270">open source</text>
 <text x="27.94" y="16.51" size="1.4224" layer="21" ratio="10">MCP79412</text>
 <text x="27.94" y="13.97" size="1.4224" layer="21" ratio="10">Real-Time Clock</text>
 <text x="90.17" y="22.86" size="1.4224" layer="21" ratio="10" rot="R90">ICSP</text>
@@ -4211,9 +4211,9 @@ iTead DRU with jc mods for clearance and thermals</description>
 <attribute name="NAME" x="77.851" y="68.6054" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="81.9404" y="69.3166" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="R3" library="_jc" package="0204/6" value="330" x="67.31" y="56.388" smashed="yes" rot="R270">
-<attribute name="NAME" x="66.8274" y="57.1246" size="1.016" layer="25" ratio="10" rot="R270"/>
-<attribute name="VALUE" x="64.9986" y="58.5216" size="1.016" layer="27" ratio="10" rot="R270"/>
+<element name="R3" library="_jc" package="0204/6" value="330" x="69.85" y="57.658" smashed="yes" rot="R270">
+<attribute name="NAME" x="69.3674" y="58.3946" size="1.016" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="67.5386" y="59.7916" size="1.016" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="C1" library="_jc" package="E2-5" value="47uF" x="80.01" y="17.78" smashed="yes" rot="R180">
 <attribute name="NAME" x="81.788" y="20.066" size="1.27" layer="25" ratio="10"/>
@@ -4245,19 +4245,29 @@ iTead DRU with jc mods for clearance and thermals</description>
 <attribute name="NAME" x="68.834" y="13.208" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="71.374" y="10.668" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="U$1" library="ohw-logo" package="OSHW_8X200_NOTEXT" value="" x="1.27" y="66.04" smashed="yes" rot="R270"/>
+<element name="U$1" library="ohw-logo" package="OSHW_8X200_NOTEXT" value="" x="1.27" y="64.77" smashed="yes" rot="R270"/>
 <element name="R4" library="_jc" package="0204/6" value="10K" x="14.732" y="26.67" smashed="yes">
 <attribute name="NAME" x="13.9954" y="26.1874" size="1.016" layer="25" ratio="10"/>
 <attribute name="VALUE" x="12.5984" y="24.3586" size="1.016" layer="27" ratio="10"/>
 </element>
-<element name="S1" library="_jc" package="B3F-312X" value="SET" x="21.59" y="71.12"/>
-<element name="S2" library="_jc" package="B3F-312X" value="UP" x="40.64" y="71.12"/>
-<element name="S3" library="_jc" package="B3F-312X" value="DN" x="59.69" y="71.12"/>
+<element name="S1" library="_jc" package="B3F-312X" value="SET" x="21.59" y="71.12" smashed="yes">
+<attribute name="NAME" x="20.36" y="68.905" size="1.27" layer="21" ratio="10"/>
+</element>
+<element name="S2" library="_jc" package="B3F-312X" value="UP" x="40.64" y="71.12" smashed="yes">
+<attribute name="NAME" x="39.41" y="68.905" size="1.27" layer="21" ratio="10"/>
+</element>
+<element name="S3" library="_jc" package="B3F-312X" value="DN" x="59.69" y="71.12" smashed="yes">
+<attribute name="NAME" x="58.46" y="68.905" size="1.27" layer="21" ratio="10"/>
+</element>
 <element name="C5" library="_jc" package="C025-025X050" value="100nF" x="43.688" y="36.83" smashed="yes" rot="R90">
 <attribute name="NAME" x="42.672" y="32.766" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="46.482" y="34.544" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="U$2" library="ohw-logo" package="OSHW_8X200_NOTEXT" value="" x="2.54" y="25.4" smashed="yes" rot="SMR90"/>
+<element name="R5" library="_jc" package="0204/6" value="0" x="66.04" y="57.658" smashed="yes" rot="R90">
+<attribute name="NAME" x="66.5226" y="56.6674" size="1.016" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="68.3514" y="55.5244" size="1.016" layer="27" ratio="10" rot="R90"/>
+</element>
 </elements>
 <signals>
 <signal name="MOSI">
@@ -4270,9 +4280,10 @@ iTead DRU with jc mods for clearance and thermals</description>
 <wire x1="66.04" y1="46.99" x2="87.63" y2="25.4" width="0.3048" layer="1"/>
 <wire x1="87.63" y1="25.4" x2="92.71" y2="25.4" width="0.3048" layer="1"/>
 <wire x1="19.34" y1="72.37" x2="25.67" y2="66.04" width="0.3048" layer="16"/>
-<wire x1="25.67" y1="66.04" x2="58.42" y2="66.04" width="0.3048" layer="16"/>
-<wire x1="58.42" y1="66.04" x2="59.69" y2="64.77" width="0.3048" layer="16"/>
-<wire x1="59.69" y1="64.77" x2="59.69" y2="50.8" width="0.3048" layer="16"/>
+<wire x1="25.67" y1="66.04" x2="55.88" y2="66.04" width="0.3048" layer="16"/>
+<wire x1="55.88" y1="66.04" x2="57.15" y2="66.04" width="0.3048" layer="16"/>
+<wire x1="57.15" y1="66.04" x2="59.69" y2="63.5" width="0.3048" layer="16"/>
+<wire x1="59.69" y1="63.5" x2="59.69" y2="50.8" width="0.3048" layer="16"/>
 </signal>
 <signal name="VCC">
 <contactref element="JP4" pad="2"/>
@@ -4455,11 +4466,11 @@ iTead DRU with jc mods for clearance and thermals</description>
 <wire x1="31.758" y1="35.56" x2="31.75" y2="35.568" width="0.3048" layer="16"/>
 <wire x1="31.75" y1="35.568" x2="31.75" y2="38.1" width="0.3048" layer="16"/>
 <wire x1="31.75" y1="43.18" x2="31.75" y2="38.1" width="0.3048" layer="16"/>
-<wire x1="31.758" y1="35.56" x2="35.568" y2="31.75" width="0.3048" layer="1"/>
-<wire x1="35.568" y1="31.75" x2="57.15" y2="31.75" width="0.3048" layer="1"/>
-<wire x1="57.15" y1="31.75" x2="61.2394" y2="27.6606" width="0.3048" layer="1"/>
-<wire x1="61.2394" y1="27.6606" x2="61.5188" y2="27.6606" width="0.3048" layer="1"/>
 <wire x1="26.67" y1="38.1" x2="31.75" y2="38.1" width="0.3048" layer="16"/>
+<wire x1="31.758" y1="35.56" x2="34.298" y2="33.02" width="0.3048" layer="1"/>
+<wire x1="34.298" y1="33.02" x2="55.88" y2="33.02" width="0.3048" layer="1"/>
+<wire x1="61.5188" y1="27.6606" x2="56.1594" y2="33.02" width="0.3048" layer="1"/>
+<wire x1="56.1594" y1="33.02" x2="55.88" y2="33.02" width="0.3048" layer="1"/>
 </signal>
 <signal name="XTAL2">
 <contactref element="Y1" pad="3"/>
@@ -4517,34 +4528,30 @@ iTead DRU with jc mods for clearance and thermals</description>
 <wire x1="33.02" y1="48.26" x2="33.02" y2="41.91" width="0.3048" layer="16"/>
 <wire x1="33.02" y1="41.91" x2="34.29" y2="40.64" width="0.3048" layer="16"/>
 <wire x1="34.29" y1="40.64" x2="34.29" y2="34.29" width="0.3048" layer="16"/>
-<wire x1="34.29" y1="34.29" x2="38.1" y2="30.48" width="0.3048" layer="16"/>
 <wire x1="44.45" y1="26.67" x2="44.45" y2="27.94" width="0.3048" layer="16"/>
-<wire x1="44.45" y1="27.94" x2="43.18" y2="29.21" width="0.3048" layer="16"/>
-<wire x1="38.1" y1="30.48" x2="39.37" y2="29.21" width="0.3048" layer="16"/>
-<wire x1="39.37" y1="29.21" x2="43.18" y2="29.21" width="0.3048" layer="16"/>
+<wire x1="34.29" y1="34.29" x2="38.1" y2="30.48" width="0.3048" layer="16"/>
+<wire x1="38.1" y1="30.48" x2="41.91" y2="30.48" width="0.3048" layer="16"/>
+<wire x1="41.91" y1="30.48" x2="44.45" y2="27.94" width="0.3048" layer="16"/>
 </signal>
 <signal name="SDA">
 <contactref element="U1" pad="27"/>
 <contactref element="PCB1" pad="5"/>
 <wire x1="34.29" y1="50.8" x2="34.29" y2="49.53" width="0.3048" layer="16"/>
 <wire x1="34.29" y1="49.53" x2="35.56" y2="48.26" width="0.3048" layer="16"/>
-<wire x1="35.56" y1="48.26" x2="35.56" y2="41.91" width="0.3048" layer="16"/>
-<wire x1="46.99" y1="26.67" x2="46.99" y2="27.94" width="0.3048" layer="16"/>
-<wire x1="35.56" y1="41.91" x2="35.56" y2="36.83" width="0.3048" layer="16"/>
-<wire x1="35.56" y1="36.83" x2="35.56" y2="35.56" width="0.3048" layer="16"/>
-<wire x1="40.64" y1="30.48" x2="44.45" y2="30.48" width="0.3048" layer="16"/>
-<wire x1="44.45" y1="30.48" x2="46.99" y2="27.94" width="0.3048" layer="16"/>
-<wire x1="40.64" y1="30.48" x2="39.37" y2="30.48" width="0.3048" layer="16"/>
-<wire x1="39.37" y1="30.48" x2="35.56" y2="34.29" width="0.3048" layer="16"/>
-<wire x1="35.56" y1="34.29" x2="35.56" y2="35.56" width="0.3048" layer="16"/>
+<wire x1="35.56" y1="48.26" x2="35.56" y2="34.29" width="0.3048" layer="16"/>
+<wire x1="35.56" y1="34.29" x2="38.1" y2="31.75" width="0.3048" layer="16"/>
+<wire x1="38.1" y1="31.75" x2="43.18" y2="31.75" width="0.3048" layer="16"/>
+<wire x1="43.18" y1="31.75" x2="46.99" y2="27.94" width="0.3048" layer="16"/>
+<wire x1="46.99" y1="27.94" x2="46.99" y2="26.67" width="0.3048" layer="16"/>
 </signal>
 <signal name="SS">
 <contactref element="U1" pad="16"/>
 <contactref element="S2" pad="2"/>
 <wire x1="38.39" y1="72.37" x2="43.45" y2="67.31" width="0.3048" layer="16"/>
-<wire x1="43.45" y1="67.31" x2="60.96" y2="67.31" width="0.3048" layer="16"/>
-<wire x1="60.96" y1="67.31" x2="62.23" y2="66.04" width="0.3048" layer="16"/>
-<wire x1="62.23" y1="66.04" x2="62.23" y2="50.8" width="0.3048" layer="16"/>
+<wire x1="43.45" y1="67.31" x2="57.15" y2="67.31" width="0.3048" layer="16"/>
+<wire x1="57.15" y1="67.31" x2="58.42" y2="67.31" width="0.3048" layer="16"/>
+<wire x1="58.42" y1="67.31" x2="62.23" y2="63.5" width="0.3048" layer="16"/>
+<wire x1="62.23" y1="63.5" x2="62.23" y2="50.8" width="0.3048" layer="16"/>
 </signal>
 <signal name="N$3">
 <contactref element="PCB2" pad="3"/>
@@ -4577,24 +4584,21 @@ iTead DRU with jc mods for clearance and thermals</description>
 <contactref element="U1" pad="14"/>
 <contactref element="R3" pad="2"/>
 <wire x1="64.77" y1="43.18" x2="64.77" y2="44.45" width="0.3048" layer="16"/>
-<wire x1="67.31" y1="53.348" x2="67.31" y2="46.99" width="0.3048" layer="16"/>
-<wire x1="67.31" y1="46.99" x2="64.77" y2="44.45" width="0.3048" layer="16"/>
+<wire x1="64.77" y1="44.45" x2="69.85" y2="49.53" width="0.3048" layer="16"/>
+<wire x1="69.85" y1="49.53" x2="69.85" y2="54.618" width="0.3048" layer="16"/>
 </signal>
 <signal name="PB1">
 <contactref element="U1" pad="15"/>
-<contactref element="PCB2" pad="15"/>
-<wire x1="53.09" y1="63.76" x2="53.09" y2="62.48" width="0.3048" layer="1"/>
-<wire x1="53.09" y1="62.48" x2="53.34" y2="62.23" width="0.3048" layer="1"/>
-<wire x1="53.34" y1="62.23" x2="54.61" y2="60.96" width="0.3048" layer="1"/>
-<wire x1="54.61" y1="60.96" x2="55.88" y2="60.96" width="0.3048" layer="1"/>
-<wire x1="55.88" y1="60.96" x2="64.77" y2="52.07" width="0.3048" layer="1"/>
-<wire x1="64.77" y1="52.07" x2="64.77" y2="50.8" width="0.3048" layer="1"/>
+<contactref element="R5" pad="1"/>
+<wire x1="64.77" y1="50.8" x2="64.77" y2="52.07" width="0.3048" layer="16"/>
+<wire x1="64.77" y1="52.07" x2="66.04" y2="53.34" width="0.3048" layer="16"/>
+<wire x1="66.04" y1="53.34" x2="66.04" y2="54.618" width="0.3048" layer="16"/>
 </signal>
 <signal name="N$4">
 <contactref element="R3" pad="1"/>
 <contactref element="D3" pad="A"/>
-<wire x1="67.31" y1="59.428" x2="67.31" y2="60.96" width="0.3048" layer="16"/>
-<wire x1="67.31" y1="60.96" x2="77.47" y2="71.12" width="0.3048" layer="16"/>
+<wire x1="69.85" y1="60.698" x2="77.47" y2="68.318" width="0.3048" layer="16"/>
+<wire x1="77.47" y1="68.318" x2="77.47" y2="71.12" width="0.3048" layer="16"/>
 </signal>
 <signal name="PC1">
 <contactref element="U1" pad="24"/>
@@ -4608,9 +4612,10 @@ iTead DRU with jc mods for clearance and thermals</description>
 <contactref element="U1" pad="23"/>
 <contactref element="PCB2" pad="12"/>
 <wire x1="45.47" y1="63.76" x2="45.466" y2="63.756" width="0.3048" layer="16"/>
-<wire x1="45.466" y1="63.756" x2="45.466" y2="61.214" width="0.3048" layer="16"/>
-<wire x1="45.466" y1="61.214" x2="44.45" y2="60.198" width="0.3048" layer="16"/>
-<wire x1="44.45" y1="60.198" x2="44.45" y2="50.8" width="0.3048" layer="16"/>
+<wire x1="45.466" y1="63.756" x2="45.466" y2="60.96" width="0.3048" layer="16"/>
+<wire x1="45.466" y1="60.96" x2="44.45" y2="59.944" width="0.3048" layer="16"/>
+<wire x1="44.45" y1="59.944" x2="44.45" y2="59.69" width="0.3048" layer="16"/>
+<wire x1="44.45" y1="59.69" x2="44.45" y2="50.8" width="0.3048" layer="16"/>
 </signal>
 <signal name="PC2">
 <contactref element="U1" pad="25"/>
@@ -4624,11 +4629,11 @@ iTead DRU with jc mods for clearance and thermals</description>
 <wire x1="38.1" y1="44.45" x2="38.1" y2="41.91" width="0.3048" layer="1"/>
 <wire x1="38.1" y1="41.91" x2="36.83" y2="40.64" width="0.3048" layer="1"/>
 <wire x1="36.83" y1="40.64" x2="31.75" y2="40.64" width="0.3048" layer="1"/>
-<wire x1="31.75" y1="40.64" x2="20.32" y2="29.21" width="0.3048" layer="1"/>
-<wire x1="20.32" y1="29.21" x2="17.78" y2="29.21" width="0.3048" layer="1"/>
-<wire x1="17.78" y1="29.21" x2="16.51" y2="29.21" width="0.3048" layer="1"/>
 <wire x1="16.51" y1="29.21" x2="13.97" y2="26.67" width="0.3048" layer="1"/>
 <wire x1="13.97" y1="26.67" x2="11.692" y2="26.67" width="0.3048" layer="1"/>
+<wire x1="31.75" y1="40.64" x2="22.86" y2="31.75" width="0.3048" layer="1"/>
+<wire x1="22.86" y1="31.75" x2="19.05" y2="31.75" width="0.3048" layer="1"/>
+<wire x1="19.05" y1="31.75" x2="16.51" y2="29.21" width="0.3048" layer="1"/>
 </signal>
 <signal name="PC3">
 <contactref element="U1" pad="26"/>
@@ -4688,12 +4693,20 @@ iTead DRU with jc mods for clearance and thermals</description>
 <signal name="PD3">
 <contactref element="U1" pad="5"/>
 <contactref element="JP2" pad="3"/>
-<wire x1="41.91" y1="43.18" x2="41.91" y2="40.64" width="0.3048" layer="16"/>
-<wire x1="41.91" y1="40.64" x2="41.91" y2="34.29" width="0.3048" layer="16"/>
-<wire x1="41.91" y1="34.29" x2="54.483" y2="21.717" width="0.3048" layer="16"/>
-<wire x1="54.483" y1="21.717" x2="55.88" y2="20.32" width="0.3048" layer="16"/>
-<wire x1="55.88" y1="20.32" x2="55.88" y2="15.24" width="0.3048" layer="16"/>
-<wire x1="55.88" y1="15.24" x2="55.753" y2="15.24" width="0.3048" layer="16"/>
+<wire x1="41.91" y1="43.18" x2="41.91" y2="35.56" width="0.3048" layer="16"/>
+<wire x1="41.91" y1="35.56" x2="41.91" y2="34.29" width="0.3048" layer="16"/>
+<wire x1="41.91" y1="34.29" x2="43.18" y2="33.02" width="0.3048" layer="16"/>
+<wire x1="43.18" y1="33.02" x2="45.72" y2="33.02" width="0.3048" layer="16"/>
+<wire x1="45.72" y1="33.02" x2="55.753" y2="22.987" width="0.3048" layer="16"/>
+<wire x1="55.753" y1="22.987" x2="55.753" y2="15.24" width="0.3048" layer="16"/>
+</signal>
+<signal name="N$6">
+<contactref element="PCB2" pad="15"/>
+<contactref element="R5" pad="2"/>
+<wire x1="53.09" y1="63.76" x2="53.086" y2="63.756" width="0.3048" layer="1"/>
+<wire x1="53.086" y1="63.756" x2="53.086" y2="62.484" width="0.3048" layer="1"/>
+<wire x1="53.086" y1="62.484" x2="54.872" y2="60.698" width="0.3048" layer="1"/>
+<wire x1="54.872" y1="60.698" x2="66.04" y2="60.698" width="0.3048" layer="1"/>
 </signal>
 </signals>
 </board>

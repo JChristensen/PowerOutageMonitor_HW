@@ -13433,6 +13433,7 @@ Source: http://www.osram.convergy.de/</description>
 <part name="S2" library="_jc" deviceset="B3F-312X" device="" value="UP"/>
 <part name="S3" library="_jc" deviceset="B3F-312X" device="" value="DN"/>
 <part name="C5" library="_jc" deviceset="C-US" device="025-025X050" value="100nF"/>
+<part name="R5" library="_jc" deviceset="R-US_" device="0204/6" value="0"/>
 </parts>
 <sheets>
 <sheet>
@@ -13529,6 +13530,10 @@ Source: http://www.osram.convergy.de/</description>
 <instance part="S2" gate="G$1" x="215.9" y="152.4" rot="R90"/>
 <instance part="S3" gate="G$1" x="231.14" y="152.4" rot="R90"/>
 <instance part="C5" gate="G$1" x="218.44" y="66.04"/>
+<instance part="R5" gate="G$1" x="142.24" y="177.8" smashed="yes" rot="R180">
+<attribute name="NAME" x="138.2014" y="181.61" size="1.778" layer="95"/>
+<attribute name="VALUE" x="143.002" y="181.61" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -13973,9 +13978,9 @@ Source: http://www.osram.convergy.de/</description>
 <label x="139.7" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="PCB2" gate="G$1" pin="A"/>
-<wire x1="132.08" y1="172.72" x2="142.24" y2="172.72" width="0.1524" layer="91"/>
-<label x="137.16" y="172.72" size="1.778" layer="95"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="147.32" y1="177.8" x2="154.94" y2="177.8" width="0.1524" layer="91"/>
+<label x="149.86" y="177.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -14103,11 +14108,20 @@ Source: http://www.osram.convergy.de/</description>
 <label x="43.18" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="PCB2" gate="G$1" pin="A"/>
+<wire x1="132.08" y1="172.72" x2="134.62" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="172.72" x2="134.62" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="134.62" y1="177.8" x2="137.16" y2="177.8" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,1,132.08,172.72,PCB2,A,PB1,,,"/>
+<approved hash="104,1,132.08,172.72,PCB2,A,N$6,,,"/>
 <approved hash="104,1,132.08,175.26,PCB2,K,GND,,,"/>
 <approved hash="104,1,132.08,139.7,PCB2,VDD,VCC,,,"/>
 <approved hash="104,1,132.08,137.16,PCB2,VSS,GND,,,"/>
