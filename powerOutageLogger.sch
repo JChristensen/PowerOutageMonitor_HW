@@ -68,15 +68,22 @@
 <layer number="108" name="fp8" color="7" fill="1" visible="no" active="yes"/>
 <layer number="109" name="fp9" color="7" fill="1" visible="no" active="yes"/>
 <layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
@@ -95,6 +102,16 @@
 <layer number="214" name="214bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="215" name="215bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="216" name="216bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="217" name="217bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="218" name="218bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="219" name="219bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="220" name="220bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="221" name="221bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="222" name="222bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="223" name="223bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="224" name="224bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
@@ -9884,6 +9901,55 @@ diameter 5 mm, grid 2.54 mm</description>
 <text x="-2.865" y="-4.865" size="1.27" layer="21" ratio="10">&gt;VALUE</text>
 <rectangle x1="-1.75" y1="3" x2="1.75" y2="4" layer="21"/>
 </package>
+<package name="TO92-OVAL">
+<wire x1="-2.095" y1="-1.651" x2="2.095" y2="-1.651" width="0.127" layer="21"/>
+<wire x1="-2.413" y1="1.1359" x2="2.413" y2="1.1359" width="0.127" layer="21" curve="-129.583345" cap="flat"/>
+<wire x1="-2.413" y1="1.1359" x2="-2.413" y2="-1.1359" width="0.127" layer="51" curve="50.416655" cap="flat"/>
+<wire x1="-2.4135" y1="-1.1359" x2="-2.095" y2="-1.651" width="0.127" layer="21" curve="13.038528" cap="flat"/>
+<wire x1="2.413" y1="-1.1359" x2="2.413" y2="1.1359" width="0.127" layer="51" curve="50.416655" cap="flat"/>
+<wire x1="2.095" y1="-1.651" x2="2.4247" y2="-1.1118" width="0.127" layer="21" curve="13.609443" cap="flat"/>
+<pad name="1" x="-2.54" y="0" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="0" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="0" y="0" drill="0.8128" shape="long" rot="R90"/>
+<text x="-2.54" y="3.048" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-3.302" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="OST-TB-3-3.5MM">
+<wire x1="5.8" y1="3.4" x2="5.8" y2="-3.6" width="0.127" layer="21"/>
+<wire x1="5.8" y1="-3.6" x2="-5.8" y2="-3.6" width="0.127" layer="21"/>
+<wire x1="-5.8" y1="-3.6" x2="-5.8" y2="3.4" width="0.127" layer="21"/>
+<wire x1="-5.8" y1="3.4" x2="5.8" y2="3.4" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-2" x2="-2" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-2" x2="-5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="0" y1="-2" x2="-1.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="0" y1="-2" x2="1.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-2" x2="2" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-2" x2="5" y2="-3.5" width="0.127" layer="21"/>
+<pad name="P$2" x="0" y="0" drill="1.2" shape="long" rot="R90"/>
+<pad name="P$1" x="-3.5" y="0" drill="1.2" shape="long" rot="R90"/>
+<pad name="P$3" x="3.5" y="0" drill="1.2" shape="long" rot="R90"/>
+<text x="-4.74" y="4" size="1.27" layer="21">&gt;NAME</text>
+<text x="-4.74" y="-5.5" size="1.27" layer="21">&gt;VALUE</text>
+</package>
+<package name="SOD-323F">
+<wire x1="-0.85" y1="0.65" x2="0.85" y2="0.65" width="0.127" layer="21"/>
+<wire x1="0.85" y1="0.65" x2="0.85" y2="-0.65" width="0.127" layer="21"/>
+<wire x1="0.85" y1="-0.65" x2="-0.85" y2="-0.65" width="0.127" layer="21"/>
+<wire x1="-0.85" y1="-0.65" x2="-0.85" y2="0.65" width="0.127" layer="21"/>
+<wire x1="0.4" y1="0.6" x2="0.4" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="0.4" y1="-0.6" x2="0.3" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="0.3" y1="-0.6" x2="0.3" y2="0.6" width="0.127" layer="21"/>
+<wire x1="-0.9" y1="0.2" x2="-1.2" y2="0.2" width="0.127" layer="51"/>
+<wire x1="-1.2" y1="0.2" x2="-1.2" y2="-0.2" width="0.127" layer="51"/>
+<wire x1="-1.2" y1="-0.2" x2="-0.9" y2="-0.2" width="0.127" layer="51"/>
+<wire x1="0.9" y1="0.2" x2="1.2" y2="0.2" width="0.127" layer="51"/>
+<wire x1="1.2" y1="0.2" x2="1.2" y2="-0.2" width="0.127" layer="51"/>
+<wire x1="1.2" y1="-0.2" x2="0.9" y2="-0.2" width="0.127" layer="51"/>
+<smd name="A" x="-1.1176" y="0" dx="1.27" dy="0.8128" layer="1"/>
+<smd name="K" x="1.1176" y="0" dx="1.27" dy="0.8128" layer="1"/>
+<text x="-1.8" y="0.9" size="0.8128" layer="25" font="vector">&gt;NAME</text>
+<text x="-2.1" y="-1.7" size="0.8128" layer="27" font="vector">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="AVR_SPI_PROGRAMMER_6">
@@ -10113,6 +10179,30 @@ diameter 5 mm, grid 2.54 mm</description>
 <pin name="P$2" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
 <pin name="P$3" x="-5.08" y="-2.54" visible="pad" length="short" direction="pas"/>
 <pin name="P$4" x="5.08" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="DS18B20">
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<text x="-10.16" y="-5.08" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="-6.604" y="-5.08" size="1.778" layer="96" rot="R90">DS18B20</text>
+<text x="-2.54" y="2.54" size="1.6764" layer="97">Vdd</text>
+<text x="-2.032" y="-4.572" size="1.6764" layer="97">GND</text>
+<pin name="DQ" x="7.62" y="0" length="short" rot="R180"/>
+<pin name="GND" x="0" y="-7.62" visible="pad" length="short" rot="R90"/>
+<pin name="VDD" x="0" y="7.62" visible="pad" length="short" rot="R270"/>
+</symbol>
+<symbol name="TERM-BLOCK-3">
+<wire x1="-3.81" y1="-7.62" x2="3.81" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-7.62" x2="3.81" y2="7.62" width="0.254" layer="94"/>
+<wire x1="3.81" y1="7.62" x2="-3.81" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="7.62" x2="-3.81" y2="-7.62" width="0.254" layer="94"/>
+<text x="-1.27" y="8.382" size="1.27" layer="95">&gt;NAME</text>
+<text x="-5.842" y="5.842" size="1.27" layer="96" rot="R270">&gt;VALUE</text>
+<pin name="1" x="5.08" y="5.08" visible="pin" length="middle" direction="pas" function="dot" swaplevel="1" rot="R180"/>
+<pin name="2" x="5.08" y="0" visible="pin" length="middle" direction="pas" function="dot" swaplevel="1" rot="R180"/>
+<pin name="3" x="5.08" y="-5.08" visible="pin" length="middle" direction="pas" function="dot" swaplevel="1" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -11637,6 +11727,15 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </technologies>
 </device>
 <device name="1N4148" package="1N4148">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="K" pad="K"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOD-323F" package="SOD-323F">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="K" pad="K"/>
@@ -13245,6 +13344,40 @@ Source: http://www.osram.convergy.de/</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="DS18B20" prefix="U">
+<gates>
+<gate name="G$1" symbol="DS18B20" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO92-OVAL">
+<connects>
+<connect gate="G$1" pin="DQ" pad="2"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OST-TB-3" prefix="J" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="TERM-BLOCK-3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="3.5MM" package="OST-TB-3-3.5MM">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="adafruit">
@@ -13367,6 +13500,32 @@ Source: http://www.osram.convergy.de/</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="supply1">
+<packages>
+</packages>
+<symbols>
+<symbol name="GND">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -13434,6 +13593,12 @@ Source: http://www.osram.convergy.de/</description>
 <part name="S3" library="_jc" deviceset="B3F-312X" device="" value="DN"/>
 <part name="C5" library="_jc" deviceset="C-US" device="025-025X050" value="100nF"/>
 <part name="R5" library="_jc" deviceset="R-US_" device="0204/6" value="0"/>
+<part name="U3" library="_jc" deviceset="DS18B20" device=""/>
+<part name="R6" library="_jc" deviceset="R-US_" device="0204/6" value="4.7K"/>
+<part name="P+8" library="SparkFun" deviceset="VCC" device=""/>
+<part name="GND16" library="supply1" deviceset="GND" device=""/>
+<part name="TB1" library="_jc" deviceset="OST-TB-3" device="3.5MM" value="Ext Sensor"/>
+<part name="GND17" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13534,6 +13699,18 @@ Source: http://www.osram.convergy.de/</description>
 <attribute name="NAME" x="138.2014" y="181.61" size="1.778" layer="95"/>
 <attribute name="VALUE" x="143.002" y="181.61" size="1.778" layer="96"/>
 </instance>
+<instance part="U3" gate="G$1" x="104.14" y="96.52" smashed="yes" rot="MR0">
+<attribute name="NAME" x="109.22" y="104.14" size="1.778" layer="95" rot="MR0"/>
+</instance>
+<instance part="R6" gate="G$1" x="91.44" y="104.14" rot="R270"/>
+<instance part="P+8" gate="1" x="91.44" y="114.3"/>
+<instance part="GND16" gate="1" x="104.14" y="83.82" smashed="yes">
+<attribute name="VALUE" x="101.6" y="81.28" size="1.778" layer="96"/>
+</instance>
+<instance part="TB1" gate="G$1" x="76.2" y="96.52"/>
+<instance part="GND17" gate="1" x="83.82" y="83.82" smashed="yes">
+<attribute name="VALUE" x="81.28" y="81.28" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -13628,6 +13805,20 @@ Source: http://www.osram.convergy.de/</description>
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="P+7" gate="1" pin="VCC"/>
+</segment>
+<segment>
+<wire x1="104.14" y1="104.14" x2="104.14" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="111.76" x2="91.44" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="109.22" x2="91.44" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="111.76" x2="91.44" y2="114.3" width="0.1524" layer="91"/>
+<junction x="91.44" y="111.76"/>
+<pinref part="U3" gate="G$1" pin="VDD"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="P+8" gate="1" pin="VCC"/>
+<wire x1="83.82" y1="101.6" x2="83.82" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="111.76" x2="91.44" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="TB1" gate="G$1" pin="1"/>
+<wire x1="81.28" y1="101.6" x2="83.82" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -13770,6 +13961,17 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="99.06" y1="45.72" x2="99.06" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 <junction x="93.98" y="45.72"/>
+</segment>
+<segment>
+<wire x1="104.14" y1="88.9" x2="104.14" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="GND"/>
+<pinref part="GND16" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="TB1" gate="G$1" pin="3"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+<wire x1="81.28" y1="91.44" x2="83.82" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="91.44" x2="83.82" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -14115,6 +14317,23 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="134.62" y1="172.72" x2="134.62" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="134.62" y1="177.8" x2="137.16" y2="177.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="PD6" class="0">
+<segment>
+<pinref part="U3" gate="G$1" pin="DQ"/>
+<wire x1="96.52" y1="96.52" x2="91.44" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="91.44" y1="96.52" x2="81.28" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="99.06" x2="91.44" y2="96.52" width="0.1524" layer="91"/>
+<junction x="91.44" y="96.52"/>
+<label x="83.82" y="96.52" size="1.778" layer="95"/>
+<pinref part="TB1" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PD6(AIN0)"/>
+<wire x1="147.32" y1="73.66" x2="139.7" y2="73.66" width="0.1524" layer="91"/>
+<label x="139.7" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
