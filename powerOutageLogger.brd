@@ -234,8 +234,8 @@
 <text x="3.048" y="32.004" size="1.4224" layer="22" ratio="10" rot="MR90">http://github.com/JChristensen</text>
 <text x="93.98" y="66.04" size="1.9304" layer="22" ratio="10" rot="SMR270">Power Outage Logger</text>
 <text x="96.52" y="66.04" size="1.4224" layer="22" ratio="10" rot="SMR270">CC BY-SA jc 0912 v1.1</text>
-<text x="10.16" y="1.27" size="1.27" layer="21" ratio="10">12345</text>
-<text x="15.24" y="1.27" size="1.27" layer="22" ratio="10" rot="MR0">12345</text>
+<text x="21.59" y="2.54" size="1.27" layer="21" ratio="10">0000</text>
+<text x="34.29" y="2.54" size="1.27" layer="22" ratio="10" rot="MR0">0000</text>
 <text x="86.614" y="21.082" size="1.27" layer="21" ratio="10">Vcc</text>
 <text x="86.614" y="28.194" size="1.27" layer="21" ratio="10">GND</text>
 <text x="38.1" y="11.43" size="1.4224" layer="21" ratio="10">Clock</text>
