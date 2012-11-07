@@ -13669,7 +13669,10 @@ Source: http://www.osram.convergy.de/</description>
 <attribute name="VALUE" x="39.116" y="33.909" size="1.778" layer="96"/>
 </instance>
 <instance part="C2" gate="G$1" x="45.72" y="38.1"/>
-<instance part="D1" gate="G$1" x="33.02" y="43.18"/>
+<instance part="D1" gate="G$1" x="33.02" y="43.18" smashed="yes">
+<attribute name="NAME" x="29.464" y="48.006" size="1.778" layer="95"/>
+<attribute name="VALUE" x="29.21" y="45.212" size="1.778" layer="96"/>
+</instance>
 <instance part="JP1" gate="G$1" x="81.28" y="48.26" smashed="yes" rot="R180">
 <attribute name="VALUE" x="88.9" y="55.88" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="83.82" y="42.418" size="1.778" layer="95" rot="R180"/>
