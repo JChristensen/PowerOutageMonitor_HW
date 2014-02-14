@@ -1,5 +1,5 @@
 ﻿ReadMe file for Arduino-Based Power Outage Logger board v1.1
-https://github.com/JChristensen/PowerOutageLogger_HW
+https://github.com/JChristensen/PowerOutageMonitor_HW
 Jack Christensen Sep 2012
 
 This work is licensed under the Creative Commons Attribution-ShareAlike 3.0
@@ -15,7 +15,7 @@ Eagle Files
 Bill of materials (below)
 
 An Arduino sketch for the board can be found at:
-https://github.com/JChristensen/PowerOutageLogger_SW
+https://github.com/JChristensen/PowerOutageMonitor_SW
 
 ================================================================================
 Assembly notes and options
@@ -75,7 +75,7 @@ J1      2.1mm power jack
 JP1     Supply select       1x3 0.1 in. male header (or use jumper)
 JP2     RTC power select    1x3 0.1 in. male header, right angle (or use jumper)
 JP3     FTDI                1x6 0.1 in. male header, right angle
-JP4     ICSP                2x6 0.1 in. male header (OPTIONAL)
+JP4     ICSP                2x3 0.1 in. male header (OPTIONAL)
 PC1     CdS Photocell
 PCB1    MCP79412            MCP79412 RTC Breakout Board, see:
                             https://github.com/JChristensen/rtc79412
