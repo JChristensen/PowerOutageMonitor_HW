@@ -22,7 +22,5 @@
 *.pro
 
 #Other files
-*.zip
-*.png
-*.xls
 Thumbs.db
+!partlist.txt

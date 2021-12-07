@@ -1,0 +1,46 @@
+Partlist
+
+Exported from powerOutageLogger.sch at 12/7/21 10:09 AM
+
+EAGLE Version 9.6.2 Copyright (c) 1988-2020 Autodesk, Inc.
+
+Assembly variant: 
+
+Part     Value          Device             Package           Library  Sheet
+
+C1       47uF           CPOL-USE2-5        E2-5              _jc      1
+C2       100nF          C-US025-025X050    C025-025X050      _jc      1
+C3       47uF           CPOL-USE2-5        E2-5              _jc      1
+C4       100nF          C-US025-025X050    C025-025X050      _jc      1
+C5       100nF          C-US025-025X050    C025-025X050      _jc      1
+C6       100nF          C-US025-025X050    C025-025X050      _jc      1
+C7       100nF          C-US025-025X050    C025-025X050      _jc      1
+C8       27pF           C-US025-025X050    C025-025X050      _jc      1
+C9       27pF           C-US025-025X050    C025-025X050      _jc      1
+C10      100nF          C-US025-025X050    C025-025X050      _jc      1
+D1       1N4004         DIODE1N400X        1N400X            _jc      1
+D2       1N4148         DIODE1N4148        1N4148            _jc      1
+D3       5mm            LED5MM             LED5MM            _jc      1
+J1       2.1MMJACKTHM   2.1MMJACKTHM       PJ-102A           adafruit 1
+JP1      Supply Select  M03LOCK            1X03_LOCK         SparkFun 1
+JP2      RTC Pwr Sel    M03LOCK            1X03_LOCK         SparkFun 1
+JP3      FTDI           M06LOCK            1X06_LOCK         SparkFun 1
+JP4      ICSP           AVR_SPI_PRG_6PTH   2X3               _jc      1
+PC1      CdS            PHOTOCELL020-017   PHOTOCELL-020-017 _jc      1
+PCB1     MCP79412       RTC79412           RTC79412          _jc      1
+PCB2     TC1602A-09T    LCD-16X2           LCD-16X2          SparkFun 1
+R1       10K            R-US_0204/6        0204/6            _jc      1
+R2       10K            TRIMPOT-3386P3386P TRIMPOT-3386P     _jc      1
+R3       330            R-US_0204/6        0204/6            _jc      1
+R4       10K            R-US_0204/6        0204/6            _jc      1
+R5       0              R-US_0204/6        0204/6            _jc      1
+R6       4.7K           R-US_0204/6        0204/6            _jc      1
+S1       SET            B3F-312X           B3F-312X          _jc      1
+S2       UP             B3F-312X           B3F-312X          _jc      1
+S3       DN             B3F-312X           B3F-312X          _jc      1
+S4       RESET          10-XXOCT           B3F-10XXOCT       _jc      1
+TB1      Ext Sensor     OST-TB-33.5MM      OST-TB-3-3.5MM    _jc      1
+U1       ATmega328P     AVR-MEGA8-PPTH     DIL28-3           SparkFun 1
+U2       78L05          78XX-HTO92         TO92-INLINE       _jc      1
+U3       DS18B20        DS18B20            TO92-OVAL         _jc      1
+Y1       16MHz          RESONATOR          RESONATOR         _jc      1

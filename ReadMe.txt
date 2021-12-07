@@ -17,6 +17,9 @@ Bill of materials (below)
 An Arduino sketch for the board can be found at:
 https://github.com/JChristensen/PowerOutageMonitor_SW
 
+Boards can be ordered from OSH Park,
+https://oshpark.com/shared_projects/5kJcAG7f
+
 ================================================================================
 Assembly notes and options
 
@@ -33,7 +36,7 @@ selecting MCU power via the RTC PWR jumper (JP2). This is supported by the
 sketch referenced above. It is also recommended to set the ATmega328P brown-out
 detector to 4.3V by setting the extended fuse byte to 0x04. Note that when the
 RTC is powered from the MCU pin, any MCU reset will cause a power outage to be
-logged, whether or not is is associated with an actual power outage.
+logged, whether or not it is associated with an actual power outage.
 
 3. The Tinsharp TC1602A-09T 16x2 LCD display uses an LED backlight that requires
 only 15mA at 5V. This means that a current-limiting resistor is not needed (use
