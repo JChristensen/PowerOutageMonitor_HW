@@ -1,6 +1,6 @@
 Partlist
 
-Exported from powerOutageLogger.sch at 12/7/21 10:09 AM
+Exported from powerOutageLogger.sch at 12/7/21 3:07 PM
 
 EAGLE Version 9.6.2 Copyright (c) 1988-2020 Autodesk, Inc.
 
